@@ -9,7 +9,7 @@ module com.example.crimealert {
     requires java.desktop;
 
     opens com.example.crimealert to javafx.fxml;
-//    exports com.example.crimealert;
+    exports com.example.crimealert;
     exports com.example.crimealert.view;
     opens com.example.crimealert.view to javafx.fxml;
     exports com.example.crimealert.controllor;
