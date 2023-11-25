@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9072fa-ee4d-4dc9-9726-ae797175ab9f" name="Changes" comment="Initial commit">
+    <list default="true" id="db9072fa-ee4d-4dc9-9726-ae797175ab9f" name="Changes" comment="Initial commit 1">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crimealert/view/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crimealert/view/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -35,14 +39,42 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zainulabideen1122"
+  }
+}]]></component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="769394bf-d78f-4826-9bb7-a4c6cb371233" />
+        <option name="url" value="https://github.com/zainulabideen1122/crimeAlert.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2YcOaY7IBepwQEcDrfSQZ0g8Tqo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,14 +96,20 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zainn\IdeaProjects\crimeAlert\src\main\resources\com\example\crimealert\view" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.crimealert.view" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.crimealert.view" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.connection">
-    <configuration name="Wellcome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.crimealert.Wellcome" />
+  <component name="RunManager" selected="Application.signup">
+    <configuration name="ConnectionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.crimealert.dataLayer.ConnectionUtil" />
       <module name="crimeAlert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.crimealert.view.*" />
+          <option name="PATTERN" value="com.example.crimealert.dataLayer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="connection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.crimealert.dataLayer.connection" />
+    <configuration name="Wellcome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.crimealert.Wellcome" />
       <module name="crimeAlert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.crimealert.dataLayer.*" />
+          <option name="PATTERN" value="com.example.crimealert.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,11 +143,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="signup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.crimealert.view.signup" />
+      <module name="crimeAlert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.crimealert.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.connection" />
+        <item itemvalue="Application.signup" />
         <item itemvalue="Application.login" />
         <item itemvalue="Application.Wellcome" />
+        <item itemvalue="Application.ConnectionUtil" />
+        <item itemvalue="Application.login" />
       </list>
     </recent_temporary>
   </component>
@@ -130,12 +183,29 @@
       <option name="project" value="LOCAL" />
       <updated>1700922974607</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1700924047093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700924047093</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1700924102315</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700924102315</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Initial commit 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
