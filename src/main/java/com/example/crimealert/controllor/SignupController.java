@@ -1,11 +1,13 @@
 package com.example.crimealert.controllor;
 
 import com.example.crimealert.businessLayer.SignupService;
+import com.example.crimealert.view.NavigationUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class SignupController {
     @FXML
@@ -24,7 +26,8 @@ public class SignupController {
     private TextField cnicField;
     @FXML
     private TextField contactField;
-
+    @FXML
+    private Label  errorLabel;
     private SignupService signupService = new SignupService();
 
     @FXML
@@ -53,8 +56,10 @@ public class SignupController {
         if (registrationSuccess) {
             System.out.println("Citizen registration successful!");
             // Add navigation or other actions on successful registration
+            errorLabel.setText("Successfully register!");
+            NavigationUtil.navigateToNextWindow("login", (Stage) errorLabel.getScene().getWindow());
         } else {
-            System.out.println("Citizen registration failed. Please try again.");
+            System.out.println("Something went wrong! Please try again!");
             // Handle the case where registration fails
         }
     }

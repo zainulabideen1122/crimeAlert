@@ -1,6 +1,7 @@
 package com.example.crimealert.controllor;
 
 import com.example.crimealert.businessLayer.LoginService;
+import com.example.crimealert.view.NavigationUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -28,6 +29,7 @@ public class LoginController {
             // Navigate to the next window or perform other actions on successful login
 //            NavigationUtil.navigateToNextWindow("next");
             System.out.println("Login successful!");
+            //NavigationUtil.navigateToNextWindow();
         } else {
 //            statusLabel.setText("Invalid email or password");
             System.out.println("Login Unsuccessful!");
