@@ -9,12 +9,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class Navigation extends Application {
+public class Station extends Application {
     double x,y =0;
 @Override
     public void start(Stage stage) throws IOException {
     BorderPane root =FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
-            "/com/example/crimealert/view/navigation.fxml")));
+            "/com/example/crimealert/view/station.fxml")));
     root.setOnMousePressed(mouseEvent -> {
         x = mouseEvent.getSceneX();
         y = mouseEvent.getSceneY();
@@ -24,6 +24,7 @@ public class Navigation extends Application {
         stage.setY(mouseEvent.getX()-y);
 
     });
+    stage.setTitle("Crime Alert");
     stage.setScene(new Scene(root,780,550));
     stage.show();
 }

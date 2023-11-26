@@ -7,15 +7,19 @@ import javafx.scene.layout.StackPane;
 
 import java.io.IOException;
 
-public class NavigationController {
+public class StationController {
     @FXML
     StackPane contentArea;
 
-
-
+    @FXML
+    public void initialize() throws IOException {
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/crimealert/view/Citizen/home.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
+    }
 
     public void home(javafx.event.ActionEvent actionEvent) throws IOException {
-        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/crimealert/view/home.fxml"));
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/crimealert/view/Citizen/home.fxml"));
         contentArea.getChildren().removeAll();
         contentArea.getChildren().setAll(fxml);
     }
