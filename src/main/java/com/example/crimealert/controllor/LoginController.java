@@ -1,6 +1,9 @@
 package com.example.crimealert.controllor;
 
 import com.example.crimealert.businessLayer.LoginService;
+import com.example.crimealert.businessLayer.LoginService.*;
+import com.example.crimealert.businessLayer.SessionManager;
+import com.example.crimealert.businessLayer.classes.*;
 import com.example.crimealert.view.NavigationUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -25,12 +28,21 @@ public class LoginController {
     protected void onLoginButtonClick() {
         String email = emailField.getText();
         String password = passwordField.getText();
+        UserType userType = UserType.CITIZEN;
+        User user = loginService.authenticateUser(email, password, userType);
 
-        if (loginService.authenticateUser(email, password)) {
+        if (user != null) {
             // Navigate to the next window or perform other actions on successful login
 //            NavigationUtil.navigateToNextWindow("next");
             System.out.println("Login successful!");
-            NavigationUtil.navigateToNextWindow("station", (Stage) emailField.getScene().getWindow());
+            SessionManager.setLoggedInUser(user);
+            SessionManager.setUserType(userType);
+            if(SessionManager.getLoggedInUser().isLoggedIn)
+            {
+                System.out.println(SessionManager.getUserType());
+
+                NavigationUtil.navigateToNextWindow("station", (Stage) emailField.getScene().getWindow());
+            }
         } else {
 //            statusLabel.setText("Invalid email or password");
             System.out.println("Login Unsuccessful!");
