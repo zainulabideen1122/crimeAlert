@@ -15,6 +15,8 @@ public class Station extends Application {
     public void start(Stage stage) throws IOException {
     BorderPane root =FXMLLoader.load(Objects.requireNonNull(getClass().getResource(
             "/com/example/crimealert/view/station.fxml")));
+
+
     root.setOnMousePressed(mouseEvent -> {
         x = mouseEvent.getSceneX();
         y = mouseEvent.getSceneY();
@@ -28,6 +30,7 @@ public class Station extends Application {
     stage.setScene(new Scene(root,780,550));
     stage.show();
 }
+
 public static void main(String[] args){
     launch(args);
 }

@@ -28,11 +28,16 @@ public class CrimeReportController {
 
     @FXML
     private void handleSubmitButton(ActionEvent event) {
-        String subject = subjectTextField.getText();
-        String place = placeTextField.getText();
-        String description = descriptionTextArea.getText();
-        System.out.println("Subject: " + subject);
-        System.out.println("Place: " + place);
-        System.out.println("Description: " + description);
+        System.out.println("test");
+//        String subject = subjectTextField.getText();
+//        String place = placeTextField.getText();
+//        String description = descriptionTextArea.getText();
+//        System.out.println("Subject: " + subject);
+//        System.out.println("Place: " + place);
+//        System.out.println("Description: " + description);
+    }
+
+    public void printSomething(ActionEvent actionEvent) {
+        System.out.println("test");
     }
 }
