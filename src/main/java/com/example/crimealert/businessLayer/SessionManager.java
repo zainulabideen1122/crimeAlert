@@ -1,5 +1,6 @@
 package com.example.crimealert.businessLayer;
 import com.example.crimealert.businessLayer.classes.User;
+import javafx.scene.control.Alert;
 
 public class SessionManager {
     private static User loggedInUser;
@@ -12,8 +13,13 @@ public class SessionManager {
         loggedInUser = user;
     }
 
-    public static void clearSession() {
+    public static void logout() {
         loggedInUser = null;
+    }
+
+    public static boolean isLoggedIn()
+    {
+        return loggedInUser != null;
     }
 
 
@@ -25,5 +31,12 @@ public class SessionManager {
 
     public static void setUserType(LoginService.UserType userType) {
         SessionManager.userType = userType;
+    }
+    public static void showLoginAlert() {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Login Required");
+        alert.setHeaderText("You need to log in to perform this action.");
+        alert.setContentText("Please log in to access this feature.");
+        alert.showAndWait();
     }
 }
