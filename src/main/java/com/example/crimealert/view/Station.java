@@ -25,7 +25,7 @@ public class Station extends Application {
 
     });
     stage.setTitle("Crime Alert");
-    stage.setScene(new Scene(root,780,550));
+    stage.setScene(new Scene(root,780,620));
     stage.show();
 }
 public static void main(String[] args){

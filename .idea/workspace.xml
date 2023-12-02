@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9072fa-ee4d-4dc9-9726-ae797175ab9f" name="Changes" comment="add crime report">
+    <list default="true" id="db9072fa-ee4d-4dc9-9726-ae797175ab9f" name="Changes" comment="Initial commit 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crimealert/businessLayer/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crimealert/businessLayer/SessionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crimealert/controllor/CrimeReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crimealert/controllor/CrimeReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crimealert/controllor/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crimealert/controllor/StationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/crimealert/view/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/crimealert/view/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/Citizen/crimeReport.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/Citizen/crimeReport.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/station.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/crimealert/view/station.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -53,6 +53,13 @@
     &quot;assignee&quot;: &quot;zainulabideen1122&quot;
   }
 }</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -88,6 +95,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zainn\IdeaProjects\crimeAlert\src\main\resources\com\example\crimealert\view\Citizen" />
       <recent name="C:\Users\zainn\IdeaProjects\crimeAlert\src\main\resources\com\example\crimealert\view" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -97,7 +105,7 @@
       <recent name="com.example.crimealert.view" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.login">
+  <component name="RunManager" selected="Application.Station">
     <configuration name="ConnectionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.crimealert.dataLayer.ConnectionUtil" />
       <module name="crimeAlert" />
@@ -165,9 +173,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Station" />
         <item itemvalue="Application.login" />
         <item itemvalue="Application.ConnectionUtil" />
-        <item itemvalue="Application.Station" />
         <item itemvalue="Application.signup" />
         <item itemvalue="Application.Wellcome" />
       </list>
@@ -222,13 +230,13 @@
       <option name="project" value="LOCAL" />
       <updated>1700943512293</updated>
     </task>
-    <task id="LOCAL-00006" summary="add crime report">
+    <task id="LOCAL-00006" summary="Initial commit 1">
       <option name="closed" value="true" />
-      <created>1700997197787</created>
+      <created>1701191215381</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1700997197787</updated>
+      <updated>1701191215381</updated>
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
@@ -247,8 +255,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial commit 1" />
-    <MESSAGE value="add crime report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add crime report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
