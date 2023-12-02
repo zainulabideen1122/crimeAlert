@@ -88,11 +88,25 @@ public class StationController {
         //contentArea.getScene().setRoot(fxml);
     }
 
-    @FXML
-    private void handleSubmitButton(ActionEvent event) {
-        System.out.println("Login first!");
+    public void emergency(javafx.event.ActionEvent actionEvent) throws IOException {
+        //setPageTitle("Report Crime");
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/crimealert/view/Citizen/emergency.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
 
+        //contentArea.getScene().setRoot(fxml);
     }
+
+    public void feedback(javafx.event.ActionEvent actionEvent) throws IOException {
+        //setPageTitle("Report Crime");
+        Parent fxml = FXMLLoader.load(getClass().getResource("/com/example/crimealert/view/Citizen/feedback.fxml"));
+        contentArea.getChildren().removeAll();
+        contentArea.getChildren().setAll(fxml);
+
+        //contentArea.getScene().setRoot(fxml);
+    }
+
+
 
 
 }

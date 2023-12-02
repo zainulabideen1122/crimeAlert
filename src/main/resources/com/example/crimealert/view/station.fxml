@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,7 +14,7 @@
    <center>
       <AnchorPane prefHeight="666.0" prefWidth="1096.0">
          <children>
-            <StackPane fx:id="contentArea" layoutY="-65.0" prefHeight="600.0" prefWidth="586.0" />
+            <StackPane fx:id="contentArea" prefHeight="600.0" prefWidth="586.0" />
          </children>
       </AnchorPane>
    </center>
@@ -31,13 +32,32 @@
    <left>
       <Pane prefHeight="613.0" prefWidth="198.0" style="-fx-background-color: #AAB2BD;" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="2.0" layoutY="34.0" prefHeight="206.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;">
+            <VBox alignment="TOP_CENTER" layoutX="2.0" layoutY="34.0" prefHeight="241.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;">
                <children>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#home" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Home" />
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#crime" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="ReportCrime" />
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Chat" />
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Emergency Request" />
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Alerts" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#home" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Home">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#crime" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="ReportCrime">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Chat">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#emergency" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Emergency Request">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Alerts">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#feedback" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #AAB2BD;" text="Feedback">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
             </VBox>
             <Button fx:id="loginBtn" layoutX="66.0" layoutY="399.0" mnemonicParsing="false" onMouseClicked="#LoginBtnClicked" prefHeight="25.0" prefWidth="67.0" text="LogIn" />
